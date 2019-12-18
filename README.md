@@ -17,15 +17,10 @@ $validator = new MobileNumberValidator();
 ```
 Take the number you want to validate-
 ```sh
-//It returns an array.
-$result = $validator->Validate($mobile_number_string);
-```
-Check whether the number is valid-
-```sh
-$is_valid = $result[0];
+$result = $validator->Validate($mobile_number_string); //It returns true/false.
 ```
 
 Get the formatted number
 ```sh
-$formatted_number = $result[1];
+$formatted_number = $validator->GetFormattedNumber(); //Returns "8801#########"
 ```
